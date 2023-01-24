@@ -4,7 +4,8 @@ function factorial() {
   let output = document.getElementById("output");
   for (let i = input; i >= 1; i--) {
     fact = fact * i;
-    
   }
-  console.log(fact);
+  let div = document.getElementById("div");
+  div.innerHTML = `${fact}`;
+  output.appendChild(div);
 }
