@@ -10,8 +10,13 @@
   <body>
     <input type="number" id="num1" />
     <input type="number" id="num2" />
-    <button onclick="sum()">get sum</button>
-    <div id="outpt"></div>
+    <button id="sumbtn" onclick="sum()">get sum</button>
+    <div id="output"></div>
+    <div id="newdiv">
+      <p>do you want sum of numbers again</p>
+      <input onclick=" repeatsum()" id="btn" value="yes" type="submit" />
+      <input onclick=" dontrepeat()" id="btn1" value="no" type="submit" />
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
