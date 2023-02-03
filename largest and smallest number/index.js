@@ -2,7 +2,7 @@ function getnumbers() {
   let input = parseInt(document.getElementById("input").value);
   let input2 = parseInt(document.getElementById("input2").value);
   let output = document.getElementById("output");
-  for (let i = 0; i <= input2; i++) {
+  for (let i = input; i <= input2; i++) {
     let div = document.createElement("div");
     div.innerHTML = `${i} `;
     output.appendChild(div);
