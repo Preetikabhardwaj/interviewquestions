@@ -1,13 +1,19 @@
 function getnumbers() {
-  let input = parseInt(document.getElementById("input").value);
-  let input2 = parseInt(document.getElementById("input2").value);
-  let output = document.getElementById("output");
-  for (let i = input; i <= input2; i++) {
-    let div = document.createElement("div");
-    div.innerHTML = `${i} `;
-    output.appendChild(div);
+  let number = [3, 11, 22, 34, 65, 88, 92];
+  let large = number[0];
+  let small = number[0];
+  let input = (document.getElementById("input").innerText = `${number}`);
+  for (let i = 0; i < number.length; i++) {
+    if (number[i] > large) {
+      large = number[i];
+      let div = document.createElement("div");
+      div.innerHTML = `${large} is largest number`;
+      document.getElementById("output").appendChild(div);
+    } else {
+      small = number[i];
+      let div = document.createElement("div");
+      div.innerHTML = `${small} is smallest number`;
+      document.getElementById("output").appendChild(div);
+    }
   }
-  let div = document.createElement("div");
-  div.innerHTML = `${input} is smallest number ${input2} is largest number`;
-  output.appendChild(div);
 }

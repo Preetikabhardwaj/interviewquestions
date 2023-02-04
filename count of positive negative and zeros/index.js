@@ -1,30 +1,20 @@
 function countofnpz() {
-  let input = parseInt(document.getElementById("input").value);
-  let output = document.getElementById("output");
-  let i;
   let positive = 0;
   let negative = 0;
-  let zeros = 0;
-  for (i = 1; i <= input; i++) {
-    let div = document.createElement("div");
-    div.innerHTML = `${i}`;
-    output.appendChild(div);
-    console.log(i);
-  }
-  if (input < 0) {
-    negative = negative + input;
-    let div = document.createElement("div");
-    div.innerHTML = `${negative} is negative number`;
-    output.appendChild(div);
-  } else if (input <= 0) {
-    zeros = zeros + input;
-    let div = document.createElement("div");
-    div.innerHTML = `${zeros} is  zero`;
-    output.appendChild(div);
-  } else {
-    positive = positive + input;
-    let div = document.createElement("div");
-    div.innerHTML = ` ${input} is positive ${positive} is  positive`;
-    output.appendChild(div);
+  let zero = 0;
+  let output = document.getElementById("output");
+  let number = [12, 15, 0, 98, 57, -2, -11, -21, 0, -29];
+  let div = document.createElement("div");
+  div.innerHTML = `${number}`;
+  output.appendChild(div);
+  console.log(number);
+  for (let i = 0; i <= number; i++) {
+    if (i < 0) {
+      let div = document.createElement("div");
+      negative = negative + i;
+      div.innerHTML = `${negative} is negative number`;
+      output.appendChild(div);
+      console.log(negative);
+    }
   }
 }
