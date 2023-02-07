@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(183, 226, 227);
+}
+#first{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 5px solid rgb(17, 91, 211);
+        height: 290px;
+        width: 380px;
+        background-color: #67a8c8;
+        border-radius: 8px;
+
+}
+input{
+    width: 260px;
+    margin-bottom: 12px;
+    height: 20px;
+}
+button{
+    width: 260px;
+        margin-bottom: 12px;
+        height: 23px;
+}
