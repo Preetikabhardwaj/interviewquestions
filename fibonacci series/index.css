@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deec8e;
+}
+input{
+    width: 260px;
+    height: 20px;
+    margin-bottom: 6px;
+}
+#first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 5px black solid;
+        height: 400px;
+        width: 450px;
+        border-radius: 12px;
+        background-color: #232020;
+}
+button{
+       
+        width: 260px;
+        margin-bottom: 6px;
+}
