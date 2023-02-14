@@ -1,18 +1,22 @@
-let number = [];
-function fibonacciseries() {
-  let input = parseInt(document.getElementById("input").value);
-  number.push(input);
-  document.getElementById("input").value = "";
-}
-function getseries() {
-  let output = document.getElementById("output");
-  let first = number[0];
-  let second = number[1];
-  let sum;
-  for (let i = 0; i < number.length; i++) {
-    sum = first + second;
-    let div = document.createElement("div");
-    div.innerHTML = `${first} ${second} ${sum}`;
-    output.appendChild(div);
+function getfibbonacci() {
+  let temp;
+  let input1 = parseInt(document.getElementById("input1").value);
+  let input2 = parseInt(document.getElementById("input2").value);
+  for (let i = 0; i <= 10; i++) {
+    temp = input1 + input2;
+    input1 = input2;
+    input2 = temp;
   }
+  let div = document.createElement("div");
+  div.innerHTML = parseInt(`${temp}`);
+  let output = document.getElementById("output").appendChild(div);
 }
+// var a = 0;
+// var b = 1;
+// for (let i = 0; i <= 10; i++) {
+// var temp = a + b;
+//   a = b;
+//   b = temp;
+
+//   console.log(temp);
+// }
