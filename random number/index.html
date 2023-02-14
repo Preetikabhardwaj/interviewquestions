@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(224, 218, 164);
+    }
+    #first {
+      height: 340px;
+      width: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(218, 236, 247);
+      border-radius: 8px;
+    }
+    button {
+      height: 20px;
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    input {
+      height: 20px;
+      width: 320px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div id="first">
+      <input id="input" type="number" />
+      <button onclick="findnumber()">check here</button>
+      <div id="output"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
