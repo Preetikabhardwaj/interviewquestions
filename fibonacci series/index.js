@@ -1,22 +1,19 @@
 function getfibbonacci() {
   let temp;
+  let firstnumber = 0;
+  let secondnumber = 1;
+  let numbers = [];
+  numbers.push(firstnumber);
+  numbers.push(secondnumber);
   let input1 = parseInt(document.getElementById("input1").value);
-  let input2 = parseInt(document.getElementById("input2").value);
-  for (let i = 0; i <= 10; i++) {
-    temp = input1 + input2;
-    input1 = input2;
-    input2 = temp;
+  for (let i = 2; i <= input1; i++) {
+    temp = firstnumber + secondnumber;
+    numbers.push(temp);
+    firstnumber = secondnumber;
+    secondnumber = temp;
   }
   let div = document.createElement("div");
-  div.innerHTML = parseInt(`${temp}`);
+  div.innerHTML = numbers;
   let output = document.getElementById("output").appendChild(div);
 }
-// var a = 0;
-// var b = 1;
-// for (let i = 0; i <= 10; i++) {
-// var temp = a + b;
-//   a = b;
-//   b = temp;
 
-//   console.log(temp);
-// }
