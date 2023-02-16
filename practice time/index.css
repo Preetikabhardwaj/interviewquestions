@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.img{
+    width: 150px;
+    border-radius: 50%;
+}
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #997979;
+    width: 350px;
+    height: 370px;
+    border-radius: 12px;
+    flex-direction: column;
+    margin: 10px ;
+    
+
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

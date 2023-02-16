@@ -62,16 +62,16 @@ const projectArr = [
 ];
 
 function loadcontent() {
-  const myContent = document.querySelector("#card");
-  const showInHtml = projectArr.map((index, name, username, email) => {
+  let output = document.getElementById("output");
+  output.innerHTML = projectArr.map((item) => {
     return `
-   <divi id="card" >
-      <div > <img id="img" src="https://tse3.mm.bing.net/th?id=OIP.B_atDrr4RpLoeIJmNsOCxgHaHa&pid=Api&P=0" alt="user image"></div>
-      <h3>Id:  <span> 1</span></h3>
-      <h4>Name:  <span> Preetika Bhardwaj</span></h4>
-      <h5>User Name:  <span> Preetika</span></h5>
-      <h6>E-mail:  <span> preetikabhardwaj2001@gmail.com</span></h6>
+    <div id="card" class="mainDiv" >
+      <div><img id="img" class="img" src="https://tse2.mm.bing.net/th?id=OIP.Gfp0lwE6h7139625a-r3aAHaHa&pid=Api&P=0" alt="user-image"></div>
+      <div class="id name" >Id: <span><h4> ${item.id}</h5></span></h5></div>
+      <div class="name">Name:  <span><h4>  ${item.name}</h4></span></h4></div>
+      <div class="username name"> UserName: <span><h4>  ${item.username}</h4></span></h5></div>
+      <div class="email name">E-mail: <span> <h5>${item.email}</h5></span></h6></div>
     </div>
-  `;
+   `;
   });
 }
