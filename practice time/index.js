@@ -66,11 +66,11 @@ function loadcontent() {
   output.innerHTML = projectArr.map((item) => {
     return `
     <div id="card" class="mainDiv" >
-      <div><img id="img" class="img" src="https://tse2.mm.bing.net/th?id=OIP.Gfp0lwE6h7139625a-r3aAHaHa&pid=Api&P=0" alt="user-image"></div>
-      <div class="id name" >Id: <span><h4> ${item.id}</h5></span></h5></div>
-      <div class="name">Name:  <span><h4>  ${item.name}</h4></span></h4></div>
-      <div class="username name"> UserName: <span><h4>  ${item.username}</h4></span></h5></div>
-      <div class="email name">E-mail: <span> <h5>${item.email}</h5></span></h6></div>
+      <div><img id="img" class="img name" src="https://tse2.mm.bing.net/th?id=OIP.T60Aago6tLDepIF5alRigwHaHa&pid=Api&P=0" alt="user-image"></div>
+      <div class="id name" >Id: <span><h4 class="names"> ${item.id}</h5></span></h5></div>
+      <div class="name names">Name:  <span><h4 class="names">  ${item.name}</h4></span></h4></div>
+      <div class="username name names"> UserName: <span><h4 class="names">  ${item.username}</h4></span></h5></div>
+      <div class="email name names">E-mail: <span> <h5 class="names">${item.email}</h5></span></h6></div>
     </div>
    `;
   });
